@@ -1,0 +1,1 @@
+SVGFEDropShadowElement.prototype = Object.create(SVGElement.prototype);
