@@ -1,0 +1,38 @@
+{
+  "name": "@esitorsunil/new-folder",
+  "version": "1.0.2",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "react-redux": "^8.0.0"
+  },
+  "peerDependencies": {
+    "@reduxjs/toolkit": "^1.9.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0",
+    "react-redux": "^8.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.27.2",
+    "@babel/core": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  }
+}
